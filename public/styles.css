@@ -1,0 +1,26 @@
+:root{
+  --dkblue: #151F30;
+  --blue:#103778;
+  --teal: #0593A2;
+  --lightOrange: #FF7A48;
+  --orange: #E3371E;
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Roboto Mono", monospace;
+  --sans: "Roboto Condensed", sans-serif;
+
+
+
+}
+
+
+.mainContainer{
+  /* font-family: var(--sans); */
+  
+}

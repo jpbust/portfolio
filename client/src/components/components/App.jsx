@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 
 const App = ()=>{
   return (
-    <div>
-      This is the starting div
+    <div className="mainContainer">
+      This is the startssss
     </div>
   )
 }
