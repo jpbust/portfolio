@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const router = require("./routes/routes");
 require("dotenv/config");
-const reload = require("reload");
 
 let app = express();
 
@@ -16,5 +15,3 @@ app.use("/", router);
 app.listen(port, () => {
   console.log("listening to port: " + port);
 });
-
-reload(app);

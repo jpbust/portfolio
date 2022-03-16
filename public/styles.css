@@ -1,4 +1,5 @@
-:root{
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
   --dkblue: #151F30;
   --blue:#103778;
   --teal: #0593A2;
@@ -13,14 +14,191 @@
   --white: #f7f8fa;
   --font-size: 1.3rem;
   --mono: "Roboto Mono", monospace;
-  --sans: "Roboto Condensed", sans-serif;
+  --sans: Roboto Condensed, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* generic styles for the page */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  color: var(--orange);
+}
 
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+/* intro styles */
+#intro {
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--teal);
+  display: block;
+  font-weight: 300;
+}
+
+#intro h2 {
+  font-size: 4rem;
+}
+
+
+#contact {
+background-color: #0593A2;
+width: 400px;
+text-align: center;
+margin: 0 auto;
+padding: 3rem 0;
+}
+
+#contact p{
+font-family: var(--sans);
+font-size: 1.4rem;
+}
+
+#contact a{
+margin-top: 3rem;
+color: #103778;
+}
+
+nav{
+font-family: var(--mono);
+font-size: 80%;
+padding: 1rem;
+}
+
+nav h1 a{
+font-family: var(--sans);
+}
+
+nav ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+
+nav li:first-child{
+flex-basis: 100%;
+text-align: center;
+}
+
+nav [className*="fa-"]{
+font-size: 150%;
+color: var(--teal);
+}
+
+nav h1 [className*="fa-"]{
+font-size: 120%;
+color: var(--teal);
+}
+
+nav a{
+color: var(--white);
+text-decoration: none;
+display: block;
+}
+
+nav a:hover{
+  color: var(--lightOrange);
+}
+
+nav .nameTop{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.button{
+background-color: var(--orange);
+padding: 0.5rem;
+border-radius: 5px;
+}
+
+.button:hover{
+color: var(--white);
+background-color: var(--lightOrange)
+
+}
+
+footer{
+text-align: center;
 
 
 }
 
+.footerName{
+display: block;
+font-family: var(--sans);
 
-.mainContainer{
-  /* font-family: var(--sans); */
-  
+}
+
+.rights{
+display: block;
+font-family: var(--sans);
+
+}
+
+
+footer ul{
+list-style-type: none;
+margin: 2rem 0;
+padding: 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+gap: 3rem;
+font-size: 3rem;
+}
+
+
+@media (min-width: 850px) {
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav li:first-child{
+  flex-basis:auto;
+  text-align: left;
+  margin-right: auto;
+}
+
 }
