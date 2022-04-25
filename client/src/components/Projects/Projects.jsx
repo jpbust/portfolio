@@ -21,7 +21,27 @@ const allProjects = [
     deployed: "https://helping-hands-redwood.herokuapp.com/",
     image: {
       url: "https://i.imgur.com/UOjt1PU.png",
-      alt: "Screenshot helping hands web page.",
+      alt: "Screenshot of helping hands web page.",
+    },
+  },
+  {
+    title: "Whitney e-commerce solution",
+    content:
+      "Witney Shopping Solutions is collaborative full-stack application that provides a vanilla-Javascript shopping experience, deliberately no front-end external libraries where used. This e-commerce store have modern stores features like browsing through pictures, questions & answer section and ratins & reviews.  browse or request items and services.",
+    stacks: [
+      "React",
+      "Node",
+      "Express",
+      "HTML",
+      "CSS",
+      "Cloudinary",
+      "PostgreSQL",
+    ],
+    gitURL: "https://github.com/Redwood-Interactive/helping-hands",
+    deployed: "https://helping-hands-redwood.herokuapp.com/",
+    image: {
+      url: "https://i.imgur.com/UOjt1PU.png",
+      alt: "Screenshot of helping hands web page.",
     },
   },
 ];
@@ -33,7 +53,7 @@ export const Projects = () => {
         <h3>Projects I'm proud of</h3>
         <h4>Latest Projects</h4>
 
-        {allProjects.map((project) => {
+        {allProjects.map((project, index) => {
           return (
             <Project
               key={project.title}
@@ -43,6 +63,7 @@ export const Projects = () => {
               image={project.image}
               deployed={project.deployed}
               gitURL={project.gitURL}
+              index={index}
             />
           );
         })}

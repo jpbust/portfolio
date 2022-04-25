@@ -23,7 +23,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/jpbust" target="_blank">
+          <a href="mailto:cuchobustamante@gmail.com" target="_blank">
             <FontAwesomeIcon icon={faEnvelope} />
             <span className="sr-only">Email</span>
           </a>
