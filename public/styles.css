@@ -98,10 +98,13 @@ margin-top: 3rem;
 color: #103778;
 }
 
+.navBar
+
 nav{
 font-family: var(--mono);
 font-size: 80%;
 padding: 1rem;
+background-color: var(--black);
 }
 
 nav h1 a{
@@ -323,4 +326,12 @@ nav li:first-child{
 img {
   width: 100%;
 
+}
+
+
+/* Page Not Found */
+
+.pageNotFound{
+  margin-top: 3rem;
+  text-align: center;
 }
