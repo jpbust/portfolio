@@ -98,10 +98,16 @@ margin-top: 3rem;
 color: #103778;
 }
 
+.navBarContainer{
+  position: sticky; top: 0;
+  background-color: var(--black);
+}
+
 nav{
 font-family: var(--mono);
 font-size: 80%;
 padding: 1rem;
+
 }
 
 nav h1 a{
@@ -295,6 +301,11 @@ nav li:first-child{
 
   }
 
+  #projects{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   #projects img{
     grid-column: 1/6;
     grid-row: 1/2;
@@ -318,4 +329,49 @@ nav li:first-child{
 img {
   width: 100%;
 
+}
+
+
+/* Page Not Found */
+
+.pageNotFound{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.notFoundImage{
+  border-radius: 15px;
+  margin: 0.5rem;
+  max-width: 300px;
+
+}
+
+/* About Me */
+
+.aboutMeContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+
+}
+
+.aboutMeIntro{
+  font-weight: bold !important;
+}
+
+.aboutMePicture{
+  max-width: 450px;
+  align-self: center;
+}
+
+.aboutMeContainer div{
+  max-width: 450px;
+
+  margin: 0px 1rem 0;
+}
+
+.aboutMeContainer p{
+  text-align: justify;
+  min-width: 450px;
 }

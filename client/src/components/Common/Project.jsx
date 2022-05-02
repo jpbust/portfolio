@@ -9,7 +9,9 @@ export const Project = ({
   image,
   gitURL,
   deployed,
+  index,
 }) => {
+  console.log(index);
   return (
     <article>
       <div className="text">
@@ -22,7 +24,7 @@ export const Project = ({
           </a>
           {deployed && (
             <a className="button" href={deployed} target="_blank">
-              Live Page
+              Deployed Version
             </a>
           )}
         </div>
