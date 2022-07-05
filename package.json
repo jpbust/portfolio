@@ -1,5 +1,5 @@
 {
-  "homepage": "http://jpbust.github.io/portfolio",
+  "homepage": "https://github.com/jpbust/portfolio#readme",
   "name": "portfolio",
   "version": "1.0.0",
   "description": "professional portfolio",
@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/jpbust/portfolio/issues"
   },
-  "homepage": "https://github.com/jpbust/portfolio#readme",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.0",
     "@fortawesome/free-regular-svg-icons": "^6.1.0",
@@ -27,7 +26,6 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "axios": "^0.25.0",
     "express": "^4.17.2",
-    "next": "^10.0.1",
     "nodemon": "^2.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
