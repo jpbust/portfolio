@@ -57,7 +57,7 @@ const Nav = () => {
           </li>
           <li>
             <a
-              href="https://docs.google.com/document/d/1kh3QkzdQTP5Mq7s4-1j-SXaA5S4qPTnz/edit?usp=sharing&ouid=112101043673644164577&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/u1bNTflAGII0ayt9CIYPL-1j-SXaA5S4qPTnz/edit?usp=sharing&ouid=112101043673644164577&rtpof=true&sd=true"
               target="_blank"
               className="button"
             >
